@@ -1,0 +1,182 @@
+/* Now make it responsive */
+@media (max-width: 1139px) {
+    .container{
+        max-width: 1020px;
+    }
+    /* Header */
+    header #topbar .temprature, .date{
+        margin-right: 25px;
+    }
+    header #topbar .topleft a{
+        padding: 5px 0px;
+    }
+}
+
+@media (max-width: 1019px) {
+    .container{
+        max-width: 768px;
+    }
+    /* Header */
+    header #topbar .topleft .topmenu{
+        display: none;
+    }
+    header #logo{
+        margin-top: 13px;
+        margin-bottom: 0px;
+    }
+    header #logo .logo1{
+        width: 200px;
+    }
+    header #logo .logo2{
+        width: 480px;
+    }
+    #navbar-box #navbar ul li a {
+        font-size: 12px;
+    }
+    #navbar-box #navbar #search1 ion-icon {
+        font-size: 16px;
+        padding: 8px;
+    }
+    /* Front Section */
+    
+    #frontNews .front2{
+        grid-template-rows: 174px 135px;
+    }
+    #frontNews .frontcontent {
+        padding: 0 13px;
+    }
+    #frontNews .frontnewsBox.frontnews1 .frontcontent a {
+        font-size: 17px;
+    }
+    #frontNews .frontnewsBox.frontnews2 .frontcontent a {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    #frontNews .frontcontent a {
+        font-size: 13px;
+    }
+
+    /* Main Section */
+    .main .postTitle a {
+        font-size: 17px;
+    }
+    .main .admin .adminFirst {
+        font-size: 10px;
+    }
+    .main .admin .comment p {
+        left: 12px;
+        top: 3px;
+        font-size: 9px;
+    }
+    .main .admin .comment ion-icon {
+        font-size: 19px;
+    }
+    #main1 .postPara {
+        margin-top: 13px;
+        font-size: 10px;
+    }
+
+    /* Main Container 1 */
+    #main1 #maincontainer1 .dontMiss {
+        grid-gap: 18px;
+    }
+    #main1 #maincontainer1 .dontMiss .dontMiss2 .dtmissPost img {
+        width: 75px;
+        margin-right: 13px;
+    }
+    #main1 #maincontainer1 .dontMiss .dontMiss2 .dtmissPost a {
+        color: var(--black);
+        text-decoration: none;
+        font-size: 11px;
+        line-height: 7px;
+    }
+    #main1 #maincontainer1 .dontMiss .dontMiss2 .dtmissPost {
+        margin-bottom: 13px;
+    }
+}
+
+@media (max-width: 767px) {
+    header{
+        display: none;
+    }
+    #mobile-header{
+        display: block;
+    }
+    /* Tranding News */
+    #tranding div.first {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    #tranding div.second {
+        display: none;
+    }
+    /* Front Section */
+    #frontNews {
+        display: block;
+        margin: 0 -15px;
+    }
+    #frontNews .front1 {
+        height: 320px;
+        margin-bottom: 4px;
+    }
+    #frontNews .front2 {
+        display: flex;
+        gap: 4px;
+        overflow-x: scroll;
+    }
+    #frontNews .front2 .frontnewsBox {
+        min-width: 75%;
+        height: 200px;
+    }
+    /* Main Section */
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-flow: row dense;
+        grid-gap: 43px;
+    }
+    .main .maincontainer{
+        grid-column-start: 1;
+    }
+    .main .aside{
+        grid-column-start: 1;
+    }
+    .main .postTitle a {
+        font-size: 21px;
+    }
+    #main1 .postPara {
+        font-size: 13px;
+    }
+    .main .admin .adminFirst {
+        font-size: 11px;
+    }
+    .main .admin .comment p {
+        left: 14px;
+        top: 3px;
+        font-size: 11px;
+    }
+    .main .admin .comment ion-icon {
+        font-size: 22px;
+    }
+    /* DontMiss */
+    #main1 #maincontainer1 .dontMiss {
+        grid-template-columns: 1fr;
+        grid-gap: 23px;
+    }
+    /* DontMiss2 */
+    #main1 #maincontainer1 .dontMiss .dontMiss2 .dtmissPost img {
+        width: 100%;
+        margin-right: 13px;
+    }
+    #main1 #maincontainer1 .dontMiss .dontMiss2 .dtmissPost a {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    #main1 #maincontainer1 .dontMiss .dontMiss2 .dtmissPost {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 15px;
+    }
+}
