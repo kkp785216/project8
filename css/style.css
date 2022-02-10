@@ -417,12 +417,6 @@ body{
             grid-auto-flow: row dense;
             grid-gap: 43px;
         }
-        .main .maincontainer{
-            grid-column-start: 1;
-        }
-        .main .aside{
-            grid-column-start: 2;
-        }
         .main .category{
             text-decoration: none;
             background-color: var(--black);
@@ -516,7 +510,7 @@ body{
             color: #d1d1d1;
             border: 1px solid #d1d1d1;
         }
-    /* Main 1 */
+    /* ===========================================Main 1================================== */
         #main1{
             margin-top: 46px;
         }
@@ -578,54 +572,7 @@ body{
         #main1 #maincontainer1 .dontMiss .dontMiss2 .dtmissPost .admin{
             margin-top: 8px;
         }
-        /* Aside 1 */
-        #main1 #aside1 .heading{
-            border-color: var(--black);
-        }
-        #main1 #aside1 .heading span{
-            background-color: black;
-            color: var(--white);
-        }
-        #main1 #aside1 .aside-social{
-            margin-bottom: 27px;
-        }
-        #main1 #aside1 .aside-social .socialSide{
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        #main1 #aside1 .aside-social .socialSide ion-icon{
-            padding: 10px;
-            color: var(--white);
-            font-size: 23px;
-            margin-right: 6px;
-        }
-        #main1 #aside1 .aside-social .facebook ion-icon{
-            background-color: #516eab;
-        }
-        #main1 #aside1 .aside-social .twitter ion-icon{
-            background-color: #2cc6f6;
-        }
-        #main1 #aside1 .aside-social .youtube ion-icon{
-            background-color: #dc4c40;
-        }
-        #main1 #aside1 .aside-social .socialSide .followers-box{
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            font-size: 11px;
-            font-weight: 600;
-        }
-        #main1 #aside1 .aside-social .socialSide .followers-box .followers span{
-            margin-left: 7px;
-        }
-        #main1 #aside1 .aside-social .socialSide .followers-box .follow{
-            text-transform: uppercase;
-        }
-        #main1 #aside1 .advertisement300-250{
-            margin: auto;
-        }
-
+        
     /* MainContainer 2 */
         #main1 #maincontainer2 .heading{
             border-color: #3a863d;
@@ -711,6 +658,53 @@ body{
             margin-top: 21px;
         }
 
+        /* Aside 1 */
+        #main1 #aside1 .heading{
+            border-color: var(--black);
+        }
+        #main1 #aside1 .heading span{
+            background-color: black;
+            color: var(--white);
+        }
+        #main1 #aside1 .aside-social{
+            margin-bottom: 27px;
+        }
+        #main1 #aside1 .aside-social .socialSide{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        #main1 #aside1 .aside-social .socialSide ion-icon{
+            padding: 10px;
+            color: var(--white);
+            font-size: 23px;
+            margin-right: 6px;
+        }
+        #main1 #aside1 .aside-social .facebook ion-icon{
+            background-color: #516eab;
+        }
+        #main1 #aside1 .aside-social .twitter ion-icon{
+            background-color: #2cc6f6;
+        }
+        #main1 #aside1 .aside-social .youtube ion-icon{
+            background-color: #dc4c40;
+        }
+        #main1 #aside1 .aside-social .socialSide .followers-box{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        #main1 #aside1 .aside-social .socialSide .followers-box .followers span{
+            margin-left: 7px;
+        }
+        #main1 #aside1 .aside-social .socialSide .followers-box .follow{
+            text-transform: uppercase;
+        }
+        #main1 #aside1 .advertisement300-250{
+            margin: auto;
+        }
 
         /* Aside 2 */
         #main1 #aside2 .heading{
@@ -749,6 +743,7 @@ body{
             color: #4db2ec;
         }
         
+    /* ====================================Main 2===================================== */
     /* Main Container 3 */
         #main2{
             margin-top: 43px;
@@ -765,6 +760,9 @@ body{
             grid-template-columns: 1fr 2fr;
             grid-gap: 27px;
             margin-bottom: 33px;
+        }
+        #main2 #maincontainer3 .performance .performanceCard:last-child{
+            margin: 0;
         }
         #main2 #maincontainer3 .performance .performanceCard .pfmThumbnail img{
             width: 100%;
@@ -811,7 +809,7 @@ body{
 /* Advertisement */
 /* 300*250 Ads */
 .advertisement300-250{
-    width: 300px;
+    max-width: 300px;
 }
 .advertisement300-250 p{
     color: var(--grey);
@@ -820,8 +818,8 @@ body{
     padding: 5px;
 }
 .advertisement300-250 img{
-    width: 300px;
-    height: 250px;
+    max-width: 300px;
+    width: 100%;
 }
 
 /* Advertisement */
@@ -830,6 +828,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 .advertisement728-90 p{
     color: var(--grey);
@@ -839,5 +839,6 @@ body{
 }
 .advertisement728-90 img{
     max-width: 728px;
+    width: 100%;
     height: 90px;
 }
