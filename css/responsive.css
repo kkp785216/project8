@@ -30,8 +30,12 @@
     header #logo .logo2{
         width: 480px;
     }
+    /* Tranding News */
+    #tranding{
+        padding: 13px 21px;
+    }
     #navbar-box #navbar ul li a {
-        font-size: 12px;
+        font-size: 11px;
     }
     #navbar-box #navbar #search1 ion-icon {
         font-size: 16px;
@@ -57,6 +61,9 @@
     }
 
     /* Main Section */
+    .main {
+        grid-gap: 23px;
+    }
     .main .postTitle a {
         font-size: 17px;
     }
@@ -72,8 +79,7 @@
         font-size: 19px;
     }
     #main1 .postPara {
-        margin-top: 13px;
-        font-size: 10px;
+        font-size: 11px;
     }
 
     /* Main Container 1 */
@@ -93,6 +99,87 @@
     #main1 #maincontainer1 .dontMiss .dontMiss2 .dtmissPost {
         margin-bottom: 13px;
     }
+    #main1 #maincontainer2 .lifestyleBig {
+        grid-gap: 21px;
+    }
+    #main1 #maincontainer2 .lifestyleBig .lefestyle .lfThumbnail {
+        height: 40%;
+        min-height: 116px;
+    }
+    #main1 #maincontainer2 .lifestyleSmall {
+        grid-gap: 21px;
+    }
+    #main1 #maincontainer2 .lifestyleSmall .lifesmall .lifestylesmPost .lifestylemargin {
+        margin-left: 13px;
+    }
+    #main1 #maincontainer2 .lifestyleSmall .lifesmall .lifestylesmPost a {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    #main1 #maincontainer2 .houseCardBox .houseCard .postTitle a{
+        font-size: 13px;
+        line-height: 5px;
+    }
+    #main2 #maincontainer3 .performance .performanceCard {
+        grid-gap: 21px;
+    }
+    #main2 #maincontainer3 .performanceCard .postPara{
+        font-size: 11px;
+        line-height: 16px;
+    }
+    #main3 #maincontainer4 .articleBox{
+        grid-gap: 21px;
+    }
+    #main3 #maincontainer4 .articleBox .postTitle a{
+        font-size: 16px;
+    }
+    /* aside */
+    #main1 #aside2 .makeitmodern{
+        column-gap: 15px;
+    }
+    #main1 #aside2 .makeitmodern .mdTitle a{
+        font-size: 12px;
+    }
+    #main3 #aside4 .mostPopular img {
+        width: 75px;
+        margin-right: 13px;
+    }
+    #main3 #aside4 .mostPopular a{
+        font-size: 12px;
+    }
+    /* Footer */
+    #footerInfoContainer .footerTopLayout .editor-pack{
+        margin-right: 33px;
+    }
+    #footerInfoContainer .footerTopLayout .editor-pack h3{
+        font-size: 17px;
+    }
+    #footerInfoContainer .footerTopLayout .editor-pack .postContainer img{
+        width: 70px;
+        margin-right: 12px;
+    }
+    #footerInfoContainer .footerTopLayout .editor-pack .postContainer a{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    #footerInfoContainer .footerTopLayout .popularCategoryBox .popularCategory{
+        font-size: 12px;
+    }
+    #footerInfoContainer .footerTopLayout{
+        padding-bottom: 33px;
+    }
+    footer .footerAboutContainer{
+        padding-top: 43px;
+        padding-bottom: 43px;
+    }
+    footer .footerAboutContainer .footerAbout h3{
+        margin-bottom: 27px;
+        font-size: 18px;
+    }
+    footer .footerAboutContainer .footerAboutBig span{
+        font-size: 13px;
+        line-height: 21px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -102,7 +189,12 @@
     #mobile-header{
         display: block;
     }
-    /* Tranding News */
+    #tradingNews{
+        margin-top: 9px;
+    }
+    #tranding #tradingNews a {
+        font-size: 14px;
+    }
     #tranding div.first {
         flex-direction: column;
         justify-content: center;
@@ -137,11 +229,11 @@
         grid-gap: 43px;
         display: block;
     }
-    .main .postTitle{
-        margin: 0;
-    }
     .main .postTitle a {
         font-size: 21px;
+    }
+    #main1{
+        margin-top: 33px;
     }
     #main1 .postPara {
         font-size: 13px;
@@ -162,6 +254,9 @@
         grid-template-columns: 1fr;
         grid-gap: 23px;
     }
+    #main1 #maincontainer1 .postNavigation{
+        margin-top: 0;
+    }
     /* DontMiss2 */
     #main1 #maincontainer1 .dontMiss .dontMiss2 .dtmissPost img {
         width: 100%;
@@ -176,17 +271,137 @@
         grid-template-columns: 1fr 2fr;
         grid-gap: 15px;
     }
+    #main1 #maincontainer2 .lifestyleBox{
+        margin-top: 27px;
+    }
     #main1 #maincontainer2 .houseBox .house-design .houseCardBox,
     #main1 #maincontainer2 .lifestyleBig,
     #main1 #maincontainer2 .lifestyleSmall{
+        display: block;
         grid-template-columns: 1fr;
+    }
+    #main1 #maincontainer2 .lifestyleBig .lefestyle{
+        margin-top: 23px;
+    }
+    #main1 #maincontainer2 .lifestyleBig .lefestyle .lfThumbnail{
+        max-height: 275px;
+    }
+    #main1 #maincontainer2 .lifestyleBig .lefestyle .lfThumbnail img {
+        width: 100%;
+        height: fit-content;
     }
     .houseCard {
         display: grid;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1fr 2.5fr;
+        margin-bottom: 23px;
     }
     .advertisement728-90{
         display: none;
+    }
+    #main1 #maincontainer2 .houseBox {
+        margin-top: 27px;
+    }
+    #main1 #maincontainer2 .houseBox .house-design .houseCardBox .houseCard h2.postTitle {
+        margin-left: 15px;
+    }
+    #main1 #maincontainer2 .houseCardBox .houseCard .postTitle a{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    #main2{
+        margin-top: 27px;
+    }
+    #main2 #maincontainer3 .performance .performanceCard{
+        grid-gap: 15px;
+    }
+    #main2 #maincontainer3 .performance .performanceCard .pfmThumbnail img{
+        height: unset;
+    }
+    #main2 #maincontainer3 .performance .performanceCard .pfmContent .postTitle a{
+        font-size: 13px;
+    }
+    #main2 #maincontainer3 .performance .performanceCard .pfmContent .postPara{
+        display: none;
+    }
+    #main3 #maincontainer4 .articleBox{
+        grid-template-columns: 1fr;
+    }
+    /* Aside */
+    #aside1, #aside2, #aside3, #aside4, #aside5{
+        margin-top: 27px !important;
+    }
+    #aside2 .modernCard .md-thumbnail a:first-child{
+        width: 100%;
+    }
+    #aside4 .mostPopular a:first-child{
+        width: 33%;
+        margin-right: 15px;
+    }
+    #main3 #aside4 .mostPopular img{
+        width: 100%;
+    }
+    #main3 #aside4 .mostPopular a{
+        font-size: 14px;
+    }
+    /* Footer */
+    #footerInfoContainer .footerTopLayout{
+        flex-direction: column;
+    }
+    #footerInfoContainer .footerTopLayout .editor-pack{
+        margin-bottom: 19px;
+        width: 100%;
+    }
+    #footerInfoContainer .footerTopLayout .editor-pack .postContainer a.footerPostImg{
+        margin-right: 18px;
+        width: 28vw;
+    }
+    #footerInfoContainer .footerTopLayout .editor-pack .postContainer a.footerPostTitle{
+        width: 100%;
+        font-size: 14px;
+    }
+    #footerInfoContainer .footerTopLayout .editor-pack .postContainer img{
+        width: 100%;
+    }
+    #footerInfoContainer .footerTopLayout {
+        padding-bottom: 23px;
+    }
+    #footerInfoContainer .footerTopLayout .popularCategoryBox .popularCategory{
+        font-size: 14px;
+    }
+    footer .footerAboutContainer{
+        flex-direction: column;
+        padding-bottom: 9px;
+    }
+    footer .footerAboutContainer .footerAbout{
+        width: 33%;
+        margin-right: 0;
+        margin-bottom: 43px;
+    }
+    footer .footerAboutContainer .footerAbout h3{
+        text-align: center;
+    }
+    .footerSocialContainer{
+        display: flex;
+        justify-content: center;
+    }
+    footer .footerAboutContainer .footerAboutBig{
+        width: 100%;
+    }
+    footer .footerAboutContainer .footerAboutBig span{
+        font-size: 14px;
+    }
+    footer .footerAboutContainer .footerAbout .footerSocialContainer .footerSocial{
+        margin-right: 10px;
+    }
+    footer .footerAboutContainer .footerAbout .footerSocialContainer .footerSocial:last-child{
+        margin-right: 0;
+    }
+    footer .footerCredit {
+        flex-direction: column;
+    }
+    footer .footerCredit .rightCredit{
+        margin: auto;
+        margin-top: 23px;
     }
 }
 

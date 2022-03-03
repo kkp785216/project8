@@ -29,7 +29,7 @@ search2.onclick = function () {
 let test = document.getElementById('searchinput');
 var testClass = test.className;
 function inputsearhh() {
-    if(test.className='active') {
+    if (test.className = 'active') {
         test.focus();
     };
 };
@@ -47,6 +47,6 @@ close2.onclick = function () {
 
 // Lazy Loading Images
 let lazy = document.querySelectorAll('img');
-for (i=0; i<lazy.length; i++) {
-    lazy[i].setAttribute("loading" , "lazy")
+for (i = 0; i < lazy.length; i++) {
+    lazy[i].setAttribute("loading", "lazy")
 }

@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
@@ -241,9 +244,6 @@ body{
         .search-slider.active:after{
             width: 85%;
         }
-        .search-slider input{
-
-        }
         .close{
             position: absolute;
             top: 0;
@@ -300,6 +300,7 @@ body{
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 4px;
+            margin: auto;
         }
         #frontNews .front1{
             width: 100%;
@@ -453,9 +454,6 @@ body{
             color: var(--grey);
             font-size: 13px;
         }
-        .main .maincontainer{
-            
-        }
         .main .postTitle{
             font-weight: normal;
             font-size: 22px;
@@ -522,6 +520,9 @@ body{
             background-color: #f9c100;
             color: var(--black);
         }
+        #main1 #maincontainer1 .postNavigation{
+            margin-top: 23px;
+        }
         #main1 #maincontainer1 .dontMiss{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -574,12 +575,15 @@ body{
         }
         
     /* MainContainer 2 */
-        #main1 #maincontainer2 .heading{
+        #main1 #maincontainer2 .lifestyleBox .heading{
             border-color: #3a863d;
         }
-        #main1 #maincontainer2 .heading span{
+        #main1 #maincontainer2 .lifestyleBox .heading span{
             background-color: #3a863d;
             color: var(--white);
+        }
+        #main1 #maincontainer2 .lifestyleBox{
+            margin-top: 43px;
         }
         #main1 #maincontainer2 .lifestyleBig{
             display: grid;
@@ -611,19 +615,19 @@ body{
             grid-gap: 43px;
             margin-top: 21px;
         }
-        #main1 #maincontainer2 .lifestyleSmall .lifesmall{
-
-        }
         #main1 #maincontainer2 .lifestyleSmall .lifesmall .lifestylesmPost{
             display: grid;
             grid-template-columns: 1fr 2fr;
             margin-bottom: 21px;
         }
         #main1 #maincontainer2 .lifestyleSmall .lifesmall .lifestylesmPost:hover .lifestylemargin a{
-            color: #3a863d;;
+            color: #3a863d;
         }
         #main1 #maincontainer2 .lifestyleSmall .lifesmall .lifestylesmPost .lifestylemargin{
             margin-left: 15px;
+        }
+        #main1 #maincontainer2 .lifestyleSmall .lifesmall .lifestylesmPost .lifestylemargin .admin{
+            margin-top: 6px;
         }
         #main1 #maincontainer2 .lifestyleSmall .lifesmall .lifestylesmPost img{
             width: 100%;
@@ -637,6 +641,13 @@ body{
         /* House Design */
         #main1 #maincontainer2 .houseBox{
             margin-top: 43px;
+        }
+        #main1 #maincontainer2 .houseBox .house-design .heading{
+            border-color: #5d7987;
+        }
+        #main1 #maincontainer2 .houseBox .house-design .heading span{
+            background-color: #5d7987;
+            color: var(--white);
         }
         #main1 #maincontainer2 .houseBox .house-design .houseCardBox{
             display: grid;
@@ -707,6 +718,9 @@ body{
         }
 
         /* Aside 2 */
+        #main1 #aside2{
+            margin-top: 43px;
+        }
         #main1 #aside2 .heading{
             border-color: var(--black);
         }
@@ -766,6 +780,7 @@ body{
         }
         #main2 #maincontainer3 .performance .performanceCard .pfmThumbnail img{
             width: 100%;
+            height: 100%;
         }
         #main2 #maincontainer3 .performance .performanceCard .pfmContent .postTitle{
             margin: 0;
@@ -794,7 +809,7 @@ body{
             display: flex;
             overflow: hidden;
             align-items: center;
-            margin: 10px 0;
+            margin: 13px 0;
             position: relative;
         }
         #main2 #aside3 .holiday-recipes .holiday-recipesCard .lfThumbnail img{
@@ -802,8 +817,230 @@ body{
             min-height: 100%;
         }
         #main2 #aside3 .holiday-recipes .holiday-recipesCard .postPara{
-            margin-bottom: 23px;
+            margin-bottom: 21px;
+            font-size: 12px;
         }
+
+    /* ====================================Main 3===================================== */
+    /* Main Container 3 */
+    #main3{
+        margin-top: 43px;
+    }
+    #main3 #maincontainer4 .heading{
+        border-color: var(--black);
+    }
+    #main3 #maincontainer4 .heading span{
+        background-color: var(--black);
+        color: var(--white);
+    }
+    #main3 #maincontainer4 .articleBox{
+        display: grid;
+        grid-gap: 43px;
+        row-gap: 27px;
+        grid-template-columns: 1fr 1fr;
+    }
+    #main3 #maincontainer4 .postTitle{
+        font-size: 21px;
+    }
+    #main3 #maincontainer4 .articleBox .article .artThumbnail{
+        display: flex;
+        position: relative;
+        height: 150px;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    #main3 #maincontainer4 .articleBox .article .artThumbnail img{
+        width: 100%;
+        min-height: 150px;
+        height: fit-content;
+    }
+
+    /* Aside 4 */
+    #main3 #aside4 .heading{
+        border-color: var(--black);
+    }
+    #main3 #aside4 .heading span{
+        background-color: var(--black);
+        color: var(--white);
+    }
+    #main3 #aside4 .mostPopular{
+        display: flex;
+        margin-bottom: 21px;
+    }
+    #main3 #aside4 .mostPopular img{
+        width: 100px;
+        margin-right: 15px;
+    }
+    #main3 #aside4 .mostPopular a{
+        color: var(--black);
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    /* Aside 5 */
+    #main3 #aside5{
+        margin-top: 43px;
+    }
+    #main3 #aside5 .heading{
+        border-color: var(--black);
+    }
+    #main3 #aside5 .heading span{
+        background-color: var(--black);
+        color: var(--white);
+    }
+    #main3 #aside5 .recentComments{
+        font-family: Segoe UI;
+        margin-bottom: 17px;
+    }
+    #main3 #aside5 .recentComments:last-child{
+        margin-bottom: 0;
+    }
+    #main3 #aside5 .recentComments span{
+        font-size: 12px;
+    }
+    #main3 #aside5 .recentComments a{
+        font-style: italic;
+        font-size: 14px;
+        color: black;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    #main3 #aside5 .recentComments a:hover{
+        color: #4db2ec;
+    }
+
+/* Footer */
+footer, footer a{
+    text-decoration: none;
+    color: var(--white);
+}
+footer a:hover{
+    color: #1aa4ce;
+}
+#footerInfoContainer{
+    background-image: linear-gradient(rgb(0 0 0 / 80%), rgb(0 0 0 / 80%)), url(../img/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 46px;
+}
+#footerInfoContainer .footerTopLayout{
+    display: flex;
+    padding-top: 57px;
+    padding-bottom: 40px;
+}
+#footerInfoContainer .footerTopLayout .editor-pack{
+    width: 30%;
+    max-width: 100%;
+    flex-grow: 1;
+    margin-right: 43px;
+}
+#footerInfoContainer .footerTopLayout .editor-pack:last-child{
+    margin-right: 0;
+}
+#footerInfoContainer .footerTopLayout .editor-pack h3{
+    font-weight: normal;
+    margin-bottom: 21px;
+}
+#footerInfoContainer .footerTopLayout .editor-pack .post{
+    display: flex;
+    margin-bottom: 21px;
+}
+#footerInfoContainer .footerTopLayout .editor-pack .postContainer a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+}
+#footerInfoContainer .footerTopLayout .editor-pack .postContainer img{
+    width: 100px;
+    margin-right: 15px;
+}
+#footerInfoContainer .footerTopLayout .editor-pack .postContainer .admin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+#footerInfoContainer .footerTopLayout .editor-pack .postContainer .admin .adminFirst{
+    font-size: 11px;
+    color: rgb(202, 202, 202);
+}
+#footerInfoContainer .footerTopLayout .editor-pack .postContainer .admin .adminFirst span{
+    color: var(--grey);
+}
+#footerInfoContainer .footerTopLayout .popularCategoryBox .popularCategory{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+    font-size: 14px;
+}
+#footerInfoContainer .footerTopLayout .popularCategoryBox .popularCategory:hover a{
+    color: #1aa4ce;
+}
+footer .hr{
+    width: 70%;
+    height: 1px;
+    background-color: #363636;
+}
+footer .footerAboutContainer{
+    display: flex;
+    align-items: center;
+    padding: 57px auto;
+}
+footer .footerAboutContainer .footerAbout{
+    width: 25%;
+    margin-right: 43px;
+}
+footer .footerAboutContainer .footerAbout:last-child{
+    margin-right: 0;
+}
+footer .footerAboutContainer .footerAboutBig{
+    flex-grow: 1;
+}
+footer .footerAboutContainer .footerAboutBig span{
+    font-size: 15px;
+    line-height: 22px;
+    display: block;
+}
+footer .footerAboutContainer .footerAboutBig span a{
+    color: #1aa4ce;
+}
+footer .footerAboutContainer .footerAbout h3{
+    margin-bottom: 33px;
+}
+footer .footerAboutContainer .footerAbout img{
+    width: 100%;
+}
+footer .footerAboutContainer .footerAbout .footerSocialContainer .footerSocial{
+    width: 13px;
+    padding: 12px;
+    display: inline-block;
+    margin-right: 5px;
+    background-color: rgb(116 116 116 / 12%);
+    border: 1px solid rgb(116 116 116 / 16%);
+}
+footer .footerAboutContainer .footerAbout .footerSocialContainer .footerSocial img{
+    width: 100%;
+    filter: invert(1);
+    display: block;
+}
+footer .footerCreditContainer{
+    background-color: black;
+    padding: 15px;
+}
+footer .footerCredit{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+footer .footerCredit .rightCredit a{
+    margin-right: 12px;
+}
+footer .footerCredit .rightCredit a:last-child{
+    margin-right: 0;
+}
+
+
 
 /* Utility Classes */
 /* Advertisement */
